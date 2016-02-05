@@ -19,7 +19,6 @@ public class test extends WebApp{
         String testLink = "http://google.com/";
         web.get(testLink);
         web.getWebElement("//*[@id='content']//li[1]/a").click();
-        web.getWebElement("//*[@id='content']//li[1]/a").click();
         String link = "https://rc-ca.secure.od.ab-soft.net/rc-setup/web/?hash=3A311900278002E9401CF51DE6CF17884ED2B3&activation";
     }
 
