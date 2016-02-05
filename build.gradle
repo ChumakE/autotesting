@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+
+    compile group: 'org.testng', name: 'testng', version: '6.8.5'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '2.46.0'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '2.46.0'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.+'
+}
