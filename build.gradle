@@ -12,3 +12,40 @@ dependencies {
     compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '2.46.0'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.+'
 }
+
+
+
+sourceSets {
+    test {
+        java {
+            srcDir 'tests'
+            include '**/*.java'
+        }
+
+    }
+
+    main {
+        java {
+            srcDir 'core'
+            include '**/*.java'
+        }
+
+
+        java {
+            srcDir 'application'
+            include '**/*.java'
+        }
+
+        resources {
+            srcDir 'core'
+            include '**/*.csv'
+        }
+
+
+        resources {
+            srcDir 'application'
+            include '**/*.csv'
+        }
+
+    }
+}
