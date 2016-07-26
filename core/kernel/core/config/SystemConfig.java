@@ -39,10 +39,12 @@ public class SystemConfig {
         File file = new File(userHome+fileName);
         if (!file.exists()) {
             try {
+                System.out.println("Config file absent. Try create new file with simple config. For mor details see ...");
                 FileWriter writer = new FileWriter(file,false);
-                writer.write("SomeConfig = true");
+                writer.write("TestConfig = true");
                 writer.write("\r\n");
                 writer.flush();
+                System.exit(0);
             } catch (IOException e) {
                 e.printStackTrace();
             }

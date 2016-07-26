@@ -5,19 +5,19 @@ package kernel.core.logger;
  */
 public class Log {
 
-    static public void write () {
+    public void write () {
         // TODO
     }
 
-    static public void fail () {
+    public void fail () {
         // TODO
     }
 
-    static public void  info() {
+    public void  info() {
         // TODO
     }
 
-    static public boolean check() {
+    public boolean check() {
         //TODO
         return false;
     }
