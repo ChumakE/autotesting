@@ -1,13 +1,17 @@
 package kernel.core.logger.entity;
 
 
+import org.hibernate.annotations.OptimisticLockType;
+
 import javax.persistence.*;
 
 /**
  * Created by user on 26.07.2016.
  */
 
+//@SuppressWarnings("JpaDataSourceORMInspection")
 @Entity
+@org.hibernate.annotations.Entity(optimisticLock = OptimisticLockType.ALL)
 @Table(name = "Steps", uniqueConstraints = {@UniqueConstraint(columnNames = "ID")})
 public class Step {
 
